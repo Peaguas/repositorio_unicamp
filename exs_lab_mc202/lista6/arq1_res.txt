@@ -1,0 +1,29 @@
+E 10: ok
+E 20: ok
+E 30: ok
+E 40: ok
+P: base | 10 | 20 | 30 | 40 | topo
+D: 40
+D: 30
+P: base | 10 | 20 | topo
+M 5: [  .  .  .  .  . ]  ini=0 fim=0 qtde=0
+F 10:     [ 10  .  .  .  . ]  ini=0 fim=1 qtde=1
+F 20:     [ 10 20  .  .  . ]  ini=0 fim=2 qtde=2
+F 30:     [ 10 20 30  .  . ]  ini=0 fim=3 qtde=3
+G 10:     [  . 20 30  .  . ]  ini=1 fim=3 qtde=2
+G 20:     [  .  . 30  .  . ]  ini=2 fim=3 qtde=1
+F 40:     [  .  . 30 40  . ]  ini=2 fim=4 qtde=2
+F 50:     [  .  . 30 40 50 ]  ini=2 fim=0 qtde=3
+F 60:     [ 60  . 30 40 50 ]  ini=2 fim=1 qtde=4
+F 70:     [ 60 70 30 40 50 ]  ini=2 fim=2 qtde=5
+F 80 cheia:[ 60 70 30 40 50 ]  ini=2 fim=2 qtde=5
+G 30:     [ 60 70  . 40 50 ]  ini=3 fim=2 qtde=4
+X 3 4 + = 7
+X 5 1 2 + 4 * + 3 - = 14
+X 7 2 - = 5
+X 1 2 : malformada
+B (a+[b*c])-{d/e}: balanceada
+B (a+[b)*c]: desbalanceada
+B ((a): desbalanceada
+B (vazia): balanceada
+B a)b(: desbalanceada
