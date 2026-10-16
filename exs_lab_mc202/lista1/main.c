@@ -144,10 +144,12 @@ int EhPrimo(int n)
 
 void DecimalParaBinario(int n, char *bin)
 {
-  /* TODO 4: trate o caso n == 0 separadamente e depois preencha
-     bin de tras para frente. */
+  if (n==0)
+    bin[0] = 0;
+    bin[1] = '\0';
 
-  bin[0] = '\0'; /* substitua pela conversao */
+
+  
 }
 
 /* ==================================================================
