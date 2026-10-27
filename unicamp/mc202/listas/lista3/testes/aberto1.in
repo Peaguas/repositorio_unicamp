@@ -1,0 +1,17 @@
+C ESTRUTURA
+L
+R 1 3
+R 4 99
+I 3 XY
+I 0 MC202-
+I 99 Z
+L
+A Marina 3521-0001
+A Ana 3521-0002
+A Tiago 3521-0003
+A Bruno 3521-0004
+A Ana 3521-9999
+A Rafael 3521-0005
+P
+B Tiago
+B Carlos

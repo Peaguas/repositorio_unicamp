@@ -1,0 +1,28 @@
+=== Exercicio 1: MinMax ===
+vetor: [42 7 91 4 56 12 88 31 4 63]
+min=4 max=91
+
+=== Exercicio 2: MDC ===
+mdc(48,18) = 6
+mdc(17,5) = 1
+mdc(100,75) = 25
+mdc(7,0) = 7
+mdc(270,192) = 6
+
+=== Exercicio 3: EhPrimo ===
+0: nao primo
+1: nao primo
+2: primo
+9: nao primo
+17: primo
+25: nao primo
+97: primo
+100: nao primo
+
+=== Exercicio 4: DecimalParaBinario ===
+  0 -> 0
+  1 -> 1
+  2 -> 10
+ 10 -> 1010
+ 25 -> 11001
+255 -> 11111111
