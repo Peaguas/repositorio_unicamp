@@ -248,7 +248,7 @@ void RemoveValor(ABBusca **ab, int valor)
 
 void ImprimeKMenores(ABBusca *ab, int *k)
 {
-    if (ab == NULL || k<0){
+    if (ab == NULL || *k<0){
         return;
     } 
 
