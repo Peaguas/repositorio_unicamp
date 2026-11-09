@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------
    MC202 - Estruturas de Dados - 2s2026
-   Laboratorio 08: Operacoes avancadas com listas, pilhas e filas
+   Laboratorio 07: Operacoes avancadas com listas, pilhas e filas
 
    Nome:
    RA:
