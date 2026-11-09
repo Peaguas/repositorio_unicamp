@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------
    MC202 - Estruturas de Dados - 2s2026
-   Laboratorio 06: Listas ligadas
+   Laboratorio 05: Listas ligadas
 
    Nome:
    RA:

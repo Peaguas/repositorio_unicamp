@@ -42,11 +42,23 @@ void ImprimeLista(No *lista){
             pos = pos->prox;
         }
     }
-    printf("NULL");
+    printf("NULL\n");
 }
 
-void BuscaElemento(No *inicio, int elem, No **ant, No **pos){
-    
+void BuscaElemento(No *inicio, int elem, No **ant, No **atual){
+    if (inicio==NULL){
+        printf("Lista vazia");
+    }
+    int cont = 0;
+    *ant = NULL;
+    *atual = inicio;
+    while ((*atual)->elem != elem && (*atual)!=NULL){
+        (*ant) = (*atual);
+        (*atual) = (*atual)->prox;
+        cont++;
+    }
+    printf("elem está no nó: %d\n", cont);
+
 }
 
 void DestroiLista(No **inicio){
@@ -62,11 +74,15 @@ void DestroiLista(No **inicio){
 
 int main(){
     No *lista = NULL;
+    No *ant; No *atual;
 
     InsereInicio(&lista, 3);
     InsereInicio(&lista, 2);
     InsereInicio(&lista, 1);
-
     ImprimeLista(lista);
+    BuscaElemento(lista, 2, &ant, &atual);
+
+
+
     DestroiLista(&lista);
 }

@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------
    MC202 - Estruturas de Dados - 2s2026
-   Laboratorio 07: Pilhas, filas e suas aplicacoes
+   Laboratorio 06: Pilhas, filas e suas aplicacoes
 
    Nome:
    RA:

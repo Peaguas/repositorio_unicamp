@@ -2,8 +2,8 @@
    MC202 - Estruturas de Dados - 2s2026
    Laboratorio 09: Arvore binaria de busca
 
-   Nome:
-   RA:
+   Nome: Pedro Henrique de Araujo Matos
+   RA: 306540
 
    Compile com:  make
    Execute com:  make teste
