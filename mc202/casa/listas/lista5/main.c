@@ -2,8 +2,8 @@
    MC202 - Estruturas de Dados - 2s2026
    Laboratorio 05: Listas ligadas
 
-   Nome:
-   RA:
+   Nome: Pedro Henrique de Araujo Matos
+   RA: 306540
 
    Compile com:  make
    Execute com:  make teste
@@ -116,8 +116,15 @@ void DestroiLista(ListaSimples **inicio)
 
 void InsereOrdenado(ListaSimples **inicio, int elem)
 {
+  NoListaSimples *novono = CriaNoSimples(elem);
+  if (inicio == NULL){
+    (*inicio) = novono;
+  }
   
-  /* TODO 1 */
+  NoListaSimples *atual; NoListaSimples *ant;
+  BuscaElemento(inicio, elem, &atual, &ant);
+
+
 }
 
 /* ==================================================================
