@@ -126,7 +126,7 @@ void InsereOrdenado(ListaSimples **inicio, int elem)
     q->prox = pos;
   } else {
     q->prox = *inicio;
-    inicio = q;
+    *inicio = q;
   }
 }
 

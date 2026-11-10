@@ -116,14 +116,26 @@ void DestroiLista(ListaSimples **inicio)
 
 void InsereOrdenado(ListaSimples **inicio, int elem)
 {
-  NoListaSimples *novono = CriaNoSimples(elem);
+  NoListaSimples *atual;
+  NoListaSimples *ant;
+  NoListaSimples *novono;
+  novono = CriaNoSimples(elem);
+  
   if (inicio == NULL){
     (*inicio) = novono;
+  } else if(BuscaElemento(*inicio, elem, &atual, &ant)){
+    novono = atual->prox;
+    atual = novono;
+  } else{
+    atual = *inicio;
+    ant = NULL;
+    while(novono->elem > atual->elem){
+      ant = atual;
+      atual = atual->prox;
+    }
+    ant = novono;
+    novono = atual;
   }
-  
-  NoListaSimples *atual; NoListaSimples *ant;
-  BuscaElemento(inicio, elem, &atual, &ant);
-
 
 }
 
